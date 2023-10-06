@@ -25,7 +25,7 @@ class _HomepageState extends State<Homepage> {
           Consumer<LoginProvider>(builder: (context,value,child){
           return Text(value.mobile??"Mobile No.");
           }),
-          const SizedBox(height: 50,),
+          const SizedBox(height: 20,),
            ElevatedButton(onPressed: (){
            Provider.of<LoginProvider>(context,listen: false).logout(context);
            }, child: const Text("Logout"))
